@@ -1,0 +1,29 @@
+.content {
+  width: 375px;
+  height: 75px;
+  margin: 0 auto;
+  display: flex;
+
+  & .logo {
+
+    //  FONTS
+
+    font-family: "Raleway", sans-serif;
+    font-size: 3.2rem;
+    line-height: 3.7em;
+    font-weight: 300;
+    color: $blue;
+
+    //  LAYOUT
+
+    margin-left: 10px;
+
+  }
+
+  & .navigation ul li {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+  }
+
+}
