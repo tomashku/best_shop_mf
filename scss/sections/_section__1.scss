@@ -1,0 +1,47 @@
+.section__1 {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & h1 {
+    //FONTS
+    font-family: "Raleway", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    //STYLES
+    color: $black;
+    //LAYOUT
+    margin-top: 170px;
+  }
+
+  & p {
+    //FONTS
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    line-height: 22px;
+    font-weight: 400;
+    //STYLES
+    color: $black;
+    text-align: center;
+    //LAYOUT
+    width: 308px;
+    height: 57px;
+    margin-top: 20px;
+  }
+
+
+  & .open__your__shop {
+    @include button($blue, 1.6rem, 92px, 22px);
+    margin-top: 28px;
+
+  }
+
+  & img {
+    position: absolute;
+    top: 434px;
+    height: 60vw;
+    max-height: 519px;
+  }
+}

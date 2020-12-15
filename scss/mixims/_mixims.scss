@@ -1,0 +1,10 @@
+@mixin button($color, $fontSize, $paddingH, $paddingV) {
+  background-color: $color;
+  color: #FFFFFF;
+  font-size: $fontSize;
+  padding: $paddingV $paddingH;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  border-radius: 40px;
+  text-decoration: none;
+}

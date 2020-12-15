@@ -1,29 +1,38 @@
-.content {
-  width: 375px;
+.content__wrapper {
+  //LAYOUT
   height: 75px;
-  margin: 0 auto;
-  display: flex;
+  position: relative;
+  //STYLES
+  background-color: $background-color;
+  box-shadow: 0 3px 6px #00000029;
 
   & .logo {
-
     //  FONTS
-
     font-family: "Raleway", sans-serif;
     font-size: 3.2rem;
-    line-height: 3.7em;
     font-weight: 300;
+    //STYLES
     color: $blue;
-
+    text-decoration: none;
     //  LAYOUT
-
-    margin-left: 10px;
-
+    position: absolute;
+    left: 10px;
+    top: 17px;
   }
 
   & .navigation ul li {
+    //LAYOUT
     display: inline-block;
+    display: none;
+    //STYLES
     text-decoration: none;
     list-style: none;
+
   }
 
+  & a {
+    //STYLES
+    text-decoration: none;
+  }
 }
+
