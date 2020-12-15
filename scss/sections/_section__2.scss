@@ -1,0 +1,82 @@
+.section__2 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & h2 {
+    //FONTS
+    font-family: "Raleway", sans-serif;
+    font-size: 3rem;
+    line-height: 35px;
+    font-weight: 400;
+    //STYLES
+    color: $black;
+    text-align: center;
+    //LAYOUT
+    width: 303px;
+    margin-top: 50px;
+  }
+
+  [class*=circle] {
+    position: relative;
+    width: 63px;
+    height: 63px;
+    margin-top: 25px;
+    border-radius: 35px;
+  }
+
+  & .circle__red {
+    background-color: $red;
+    margin-top: 25px;
+  }
+
+  & .circle__blue {
+    background-color: $blue;
+  }
+
+  & .circle__green {
+    background-color: $green;
+  }
+
+  & .circle__red::after {
+    content: url("../../assets/Person.svg");
+    position: absolute;
+    width: 44px;
+    height: 52px;
+    left: 30px;
+  }
+
+  & .circle__blue::after {
+    content: url("../../assets/Eye.svg");
+    position: absolute;
+    width: 44px;
+    height: 52px;
+    top: 13px;
+    left: 20px;
+  }
+
+  & .circle__green::after {
+    content: url("../../assets/Catalog.svg");
+    position: absolute;
+    width: 44px;
+    height: 52px;
+    top: 7px;
+    left: 30px;
+  }
+
+  & .number {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: $black;
+    margin-top: 15px;
+  }
+  & .description {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: $light-gray;
+    margin-top: 20px;
+  }
+}

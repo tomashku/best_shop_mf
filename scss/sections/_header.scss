@@ -1,10 +1,18 @@
-.content__wrapper {
-  //LAYOUT
+.header {
+  width: 100%;
   height: 75px;
-  position: relative;
-  //STYLES
-  background-color: $background-color;
   box-shadow: 0 3px 6px #00000029;
+  background-color: $background-color;
+
+
+  & .content__wrapper {
+    //LAYOUT
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //STYLES
+  }
 
   & .logo {
     //  FONTS
@@ -15,14 +23,12 @@
     color: $blue;
     text-decoration: none;
     //  LAYOUT
-    position: absolute;
-    left: 10px;
-    top: 17px;
+    margin-left: 10px;
   }
 
   & .navigation ul li {
     //LAYOUT
-    display: inline-block;
+    //display: inline-block;
     display: none;
     //STYLES
     text-decoration: none;

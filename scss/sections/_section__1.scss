@@ -1,9 +1,9 @@
 .section__1 {
-  position: relative;
-  height: 100vh;
+  //height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  //justify-content: center;
 
   & h1 {
     //FONTS
@@ -27,7 +27,6 @@
     text-align: center;
     //LAYOUT
     width: 308px;
-    height: 57px;
     margin-top: 20px;
   }
 
@@ -35,13 +34,20 @@
   & .open__your__shop {
     @include button($blue, 1.6rem, 92px, 22px);
     margin-top: 28px;
+    margin-bottom: 50px;
+  }
 
+  & .image__container {
+    overflow: hidden;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
   }
 
   & img {
-    position: absolute;
-    top: 434px;
-    height: 60vw;
-    max-height: 519px;
+    width: 200vw;
+    height: auto;
   }
+
 }
+
