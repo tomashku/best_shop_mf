@@ -1,0 +1,44 @@
+
+.section__4 {
+  //LAYOUT
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  //STYLES
+  background-color: $background-white-color;
+
+  & .pricing__box__red {
+    margin-top: 40px;
+    @include frame(293px, 251px, $red, 20px, 70px, 30px, 10px);
+  }
+& .begin__button__red {
+  width: 150px;
+  height: 50px;
+  margin-top: -25px;
+  @include button($red, 13px, 57px, 16px);
+}
+
+  & .pricing__box__blue {
+    margin-top: 40px;
+    @include frame(339px, 277px, $blue, 10px, 80px, 45px, 25px);
+  }
+  & .begin__button__blue {
+    width: 150px;
+    height: 50px;
+    margin-top: -25px;
+    @include button($blue, 13px, 57px, 16px);
+  }
+
+  & .pricing__box__green {
+    margin-top: 40px;
+    @include frame(293px, 251px, $green, 20px, 70px, 30px, 10px);
+  }
+  & .begin__button__green {
+    width: 150px;
+    height: 50px;
+    margin-top: -25px;
+    @include button($green, 13px, 57px, 16px);
+  }
+}

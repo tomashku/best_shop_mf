@@ -1,18 +1,165 @@
 .section__3 {
-  background-color: $light-gray;
+  //LAYOUT
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 40px;
+  //STYLES
+  background-color: $background-gray-color;
 
-  & .first, .second {
+  & .first, .second, {
+    //LAYOUT
     width: 315px;
     height: 370px;
-    background-color: red;
-    margin: 10px;
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //STYLES
+    background-color: $background-white-color;
   }
 
-  & .third, .fourth {
+  & .third {
+    //LAYOUT
     width: 315px;
-    height: 175px;
+    height: 290px;
+    //margin: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //STYLES
+    background-color: $background-white-color;
   }
+
+  & .fourth {
+    //LAYOUT
+    width: 315px;
+    height: 195px;
+    position: relative;
+    //STYLES
+    background-color: $green;
+
+  }
+
+  & h2 {
+    //LAYOUT
+    position: absolute;
+    //FONTS
+    font-family: "Raleway", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 35px;
+  }
+
+  & p {
+    //LAYOUT
+    position: absolute;
+    width: 272px;
+    //FONTS
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 19px;
+  }
+
+  //FIRST BOX
+
+  & .first {
+    margin-top: 40px;
+  }
+
+  & .first img {
+    width: 193px;
+    height: 110px;
+    position: relative;
+    top: 37px;
+    right: 0;
+    margin-bottom: 27px;
+  }
+
+  & .first img:before {
+    //LAYOUT
+    content: "";
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    //STYLES
+    border-radius: 30px;
+    background-color: $red;
+  }
+
+  & .first h2 {
+    //LAYOUT
+    width: 272px;
+    margin-top: 174px;
+    left: 22px
+  }
+
+  & .first p {
+    //LAYOUT
+    position: absolute;
+    height: 72px;
+    margin-top: 256px;
+  }
+
+  //SECOND BOX
+
+  & .second img {
+    width: 175px;
+    height: 135px;
+    top: 20px;
+    left: calc(50px - 175 / 2);
+    position: absolute;
+  }
+
+  & .second img:before {
+
+  }
+
+  & .second h2 {
+    //LAYOUT
+    position: absolute;
+    width: 206px;
+    margin-top: 180px;
+    left: 22px
+  }
+
+  & .second p {
+    //LAYOUT
+    position: absolute;
+    height: 72px;
+    margin-top: 268px;
+  }
+
+  //THIRD BOX
+
+  & .third h2 {
+    //LAYOUT
+    position: absolute;
+    width: 235px;
+    margin-top: 30px;
+    left: 22px
+  }
+
+  & .third p {
+    //LAYOUT
+    position: absolute;
+    height: 72px;
+    margin-top: 188px;
+  }
+
+  //FOURTH BOX
+
+  & .fourth img {
+    position: absolute;
+    width: 295px;
+    height: 207px;
+    top: 30px;
+    //left: -10px;
+  }
+
 }

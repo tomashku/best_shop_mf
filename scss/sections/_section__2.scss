@@ -1,5 +1,4 @@
 .section__2 {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,20 +22,14 @@
     width: 63px;
     height: 63px;
     margin-top: 25px;
-    border-radius: 35px;
+    border-radius: 50%;
   }
 
   & .circle__red {
+    //STYLES
     background-color: $red;
+    //LAYOUT
     margin-top: 25px;
-  }
-
-  & .circle__blue {
-    background-color: $blue;
-  }
-
-  & .circle__green {
-    background-color: $green;
   }
 
   & .circle__red::after {
@@ -47,6 +40,10 @@
     left: 30px;
   }
 
+  & .circle__blue {
+    background-color: $blue;
+  }
+
   & .circle__blue::after {
     content: url("../../assets/Eye.svg");
     position: absolute;
@@ -54,6 +51,10 @@
     height: 52px;
     top: 13px;
     left: 20px;
+  }
+
+  & .circle__green {
+    background-color: $green;
   }
 
   & .circle__green::after {
@@ -66,17 +67,28 @@
   }
 
   & .number {
+    //FONTS
     font-family: "Raleway", sans-serif;
     font-size: 2rem;
     font-weight: 800;
+    //STYLES
     color: $black;
+    //LAYOUT
     margin-top: 15px;
   }
+
   & .description {
+    //FONTS
     font-family: "Raleway", sans-serif;
     font-size: 1.7rem;
     font-weight: 400;
+    //STYLES
     color: $light-gray;
+    //LAYOUT
     margin-top: 20px;
+  }
+
+  & .description:last-child {
+    margin-bottom: 50px;
   }
 }

@@ -38,15 +38,15 @@
   }
 
   & .image__container {
+    width: 100%;
     overflow: hidden;
-    width: 100vw;
     display: flex;
     justify-content: center;
   }
 
   & img {
-    width: 200vw;
-    height: auto;
+    width: 200%;
+    height: 200%;
   }
 
 }
