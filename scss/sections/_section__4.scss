@@ -9,21 +9,24 @@
   //STYLES
   background-color: $background-white-color;
 
+  //FRAMES AND BUTTONS
+
   & .pricing__box__red {
     margin-top: 40px;
     @include frame(293px, 251px, $red, 20px, 70px, 30px, 10px);
   }
-& .begin__button__red {
-  width: 150px;
-  height: 50px;
-  margin-top: -25px;
-  @include button($red, 13px, 57px, 16px);
-}
 
+  & .begin__button__red {
+    width: 150px;
+    height: 50px;
+    margin-top: -25px;
+    @include button($red, 13px, 57px, 16px);
+  }
   & .pricing__box__blue {
     margin-top: 40px;
     @include frame(339px, 277px, $blue, 10px, 80px, 45px, 25px);
   }
+
   & .begin__button__blue {
     width: 150px;
     height: 50px;
@@ -35,10 +38,93 @@
     margin-top: 40px;
     @include frame(293px, 251px, $green, 20px, 70px, 30px, 10px);
   }
+
   & .begin__button__green {
     width: 150px;
     height: 50px;
     margin-top: -25px;
     @include button($green, 13px, 57px, 16px);
   }
+
+
+  & .pricing__box__red {
+    & .right__side {
+      @for $i from 1 through 5 {
+        p:nth-child(#{$i}) {
+          position: relative;
+        }
+      }
+    }
+  }
+
+  & .pricing__box__blue {
+    & .right__side {
+      @for $i from 1 through 5 {
+        p:nth-child(#{$i}) {
+          position: relative;
+        }
+      }
+    }
+  }
+
+  & .pricing__box__green {
+    & .right__side {
+      @for $i from 1 through 5 {
+        p:nth-child(#{$i}) {
+          position: relative;
+        }
+      }
+    }
+  }
+
+  //ICONS
+  & .pricing__box__red .right__side p:nth-child(n + 1):nth-child(-n + 3):before {
+    content: url("/assets/Ckechmark-1.svg");
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: -20px;
+    top: 1px;
+  }
+
+  & .pricing__box__red .right__side p:nth-child(n + 4):nth-child(-n + 5):before {
+    content: url("/assets/Close.svg");
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: -20px;
+    top: 1px;
+  }
+
+  & .pricing__box__blue .right__side p:nth-child(n + 1):nth-child(-n + 4):before {
+    content: url("/assets/Ckechmark-1.svg");
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: -20px;
+    top: 1px;
+  }
+
+  & .pricing__box__blue .right__side p:nth-child(5):before {
+    content: url("/assets/Close.svg");
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: -20px;
+    top: 1px;
+  }
+
+  & .pricing__box__green .right__side p:nth-child(n):before {
+    content: url("/assets/Ckechmark-1.svg");
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: -20px;
+    top: 1px;
+  }
+
+  //ICONS END
+
+
 }
+

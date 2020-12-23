@@ -68,25 +68,30 @@
 
   & .first {
     margin-top: 40px;
+    position: relative;
   }
 
   & .first img {
     width: 193px;
     height: 110px;
-    position: relative;
-    top: 37px;
+    margin-top: 37px;
     right: 0;
     margin-bottom: 27px;
+    z-index: 1;
   }
 
-  & .first img:before {
+  & .first:before {
     //LAYOUT
     content: "";
-    width: 190px;
-    height: 190px;
     position: absolute;
-    left: 0;
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 15px;
+    transform: rotate(45deg);
+    right: 40px;
     top: 0;
+    z-index: 0;
     //STYLES
     border-radius: 30px;
     background-color: $red;
@@ -108,6 +113,10 @@
 
   //SECOND BOX
 
+  & .second {
+    position: relative;
+  }
+
   & .second img {
     width: 175px;
     height: 135px;
@@ -116,8 +125,20 @@
     position: absolute;
   }
 
-  & .second img:before {
-
+  & .second:before {
+    //LAYOUT
+    content: "";
+    position: absolute;
+    display: block;
+    width: 125px;
+    height: 125px;
+    margin: 15px;
+    right: 105px;
+    top: 0;
+    z-index: 0;
+    //STYLES
+    border-radius: 50%;
+    background-color: $blue;
   }
 
   & .second h2 {

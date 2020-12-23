@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2973f3ee-3882-4a98-89b1-900b9eb82d91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scss/sections/_section__4.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/sections/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/sections/_section__5.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Checkmark-1.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/colors/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/colors/_colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/fonts/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/fonts/_fonts.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/mixims/_mixims.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/mixims/_mixims.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/sections/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/sections/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/sections/_section__1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/sections/_section__1.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/sections/_section__2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/sections/_section__2.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/sections/_section__3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/sections/_section__3.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/sections/_section__4.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/sections/_section__4.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +63,11 @@
       <workItem from="1608037133660" duration="10636000" />
       <workItem from="1608134378332" duration="183000" />
       <workItem from="1608134759807" duration="627000" />
-      <workItem from="1608185148597" duration="16849000" />
+      <workItem from="1608185148597" duration="36585000" />
+      <workItem from="1608483814125" duration="104000" />
+      <workItem from="1608564722937" duration="533000" />
+      <workItem from="1608624748193" duration="56000" />
+      <workItem from="1608633319009" duration="12328000" />
     </task>
     <servers />
   </component>

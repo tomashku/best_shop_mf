@@ -3,7 +3,7 @@
   height: 75px;
   box-shadow: 0 3px 6px #00000029;
   background-color: $background-white-color;
-
+  position: relative;
 
   & .content__wrapper {
     //LAYOUT
@@ -11,10 +11,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    //STYLES
   }
 
-  & .logo {
+  & .logo span {
     //  FONTS
     font-family: "Raleway", sans-serif;
     font-size: 3.2rem;
@@ -26,19 +25,83 @@
     margin-left: 10px;
   }
 
-  & .navigation ul li {
-    //LAYOUT
-    //display: inline-block;
-    display: none;
-    //STYLES
-    text-decoration: none;
-    list-style: none;
+  & .navigation {
+    position: absolute;
+    top: -105px;
+    right: 30px;
+    z-index: -1;
+    transition: 0.3s;
+    //display: none;
 
+    & ul li {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.6rem;
+      line-height: 22px;
+      font-weight: 400;
+      //LAYOUT
+      margin: 10px 0;
+
+      //display: inline-block
+
+      //STYLES
+      list-style: none;
+    }
   }
 
   & a {
     //STYLES
     text-decoration: none;
+    //FONTS
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+    color: $black;
+    //LAYOUT
+
+  }
+
+  & .checkbox {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 20px;
+
+    & input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+      display: none;
+    }
+
+    & span {
+      display: block;
+      height: 2.5px;
+      width: 20px;
+      margin: 2px 30px;
+      border-radius: 3px;
+
+      background-color: $blue;
+      cursor: pointer;
+    }
+
+    & input:checked ~ .navigation {
+      transform: translate(0, 155px);
+    }
+
+    & input:checked ~ span:nth-child(2) {
+      transform: rotate(-45deg) translate(0, 4.5px);
+    }
+
+    & input:checked ~ span:nth-child(3) {
+      display: none;
+    }
+
+    & input:checked ~ span:nth-child(4) {
+      transform: rotate(45deg) translate(0, -4.5px);
+    }
   }
 }
 
