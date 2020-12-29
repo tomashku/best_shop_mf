@@ -13,7 +13,13 @@
     //STYLES
     color: $black;
     //LAYOUT
+    width: 162px;
     margin-top: 110px;
+
+    position: absolute;
+    z-index: -2;
+    left: calc(50% - 80px);
+    top: 90px;
   }
 
   & p {
@@ -27,7 +33,7 @@
     text-align: center;
     //LAYOUT
     width: 308px;
-    margin-top: 20px;
+    margin-top: 170px;
   }
 
 
@@ -38,15 +44,14 @@
   }
 
   & .image__container {
-    width: 100%;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
+    //display: flex;
+    //justify-content: center;
   }
 
   & img {
-    width: 200%;
-    height: 200%;
+    width: 100%;
+    height: auto;
   }
 
 }

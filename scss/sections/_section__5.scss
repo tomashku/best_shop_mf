@@ -3,11 +3,19 @@
   flex-direction: column;
   align-items: center;
   padding: 0 30px;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: center;
+  }
 
   & .any__questions {
     width: 375px;
     margin-top: 55px;
     padding: 0 30px;
+    @media (min-width: 1024px) {
+      align-self: flex-start;
+      margin-right: 114px;
+    }
 
     & p:nth-child(1) {
       //LAYOUT
@@ -44,6 +52,11 @@
       position: relative;
       margin-bottom: 17px;
       padding-left: 38px;
+      @media (min-width: 1024px) {
+        float: left;
+        margin-left: -10px;
+        margin-right: 10px;
+      }
     }
 
     & p:nth-child(3):before {
@@ -57,7 +70,9 @@
     & p:nth-child(4) {
       position: relative;
       padding-left: 38px;
-
+      @media (min-width: 1024px) {
+        float: left;
+      }
     }
 
     & p:nth-child(4):before {
@@ -75,6 +90,9 @@
     margin-top: 56px;
     width: 312px;
     position: relative;
+    @media (min-width: 1024px) {
+
+    }
 
     & label {
       font-family: "Open Sans", sans-serif;
@@ -138,6 +156,7 @@
       right: 0;
       bottom: -30px;
       @include button($blue, 13px, 97px, 16px);
+      box-shadow: 5px 10px 14px #07ACE629;
     }
   }
 }
