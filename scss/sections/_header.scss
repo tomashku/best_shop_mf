@@ -68,6 +68,7 @@
     }
 
     & li {
+      //LAYOUT
       display: inline-block;
       //STYLES
       list-style: none;
@@ -129,13 +130,16 @@
     }
 
     & span {
+      //LAYOUT
       display: block;
       height: 2.5px;
       width: 20px;
       margin: 2px 30px;
       border-radius: 3px;
-      background-color: $blue;
       cursor: pointer;
+      //STYLES
+      background-color: $blue;
+
     }
 
     & input:checked ~ .navigation {

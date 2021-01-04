@@ -10,7 +10,7 @@
   @media (min-width: 1024px) {
     position: relative;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -28,13 +28,12 @@
     }
   }
 
-  & .red,.blue,.green {
+  & .red, .blue, .green {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     @media (min-width: 1024px) {
-margin-top: 50px;
+      margin-top: 50px;
     }
 
     //FRAMES AND BUTTONS
@@ -43,7 +42,6 @@ margin-top: 50px;
       @include frame(293px, 251px, $red, 20px, 70px, 30px, 10px);
 
       @media (min-width: 1024px) {
-        margin: 0;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -64,6 +62,8 @@ margin-top: 50px;
       margin-top: -25px;
       z-index: 1;
       @include button($red, 13px, 57px, 16px);
+      @media (min-width: 1024px) {
+      }
     }
 
     & .pricing__box__blue {
@@ -98,7 +98,6 @@ margin-top: 50px;
       margin-top: 40px;
       @include frame(293px, 251px, $green, 20px, 70px, 30px, 10px);
       @media (min-width: 1024px) {
-        margin: 0;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -119,6 +118,8 @@ margin-top: 50px;
       margin-top: -25px;
       z-index: 1;
       @include button($green, 13px, 57px, 16px);
+      @media (min-width: 1024px) {
+      }
     }
 
 
@@ -197,9 +198,6 @@ margin-top: 50px;
       left: -20px;
       top: 1px;
     }
-
-    //ICONS END
-
   }
 }
 
