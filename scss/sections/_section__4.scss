@@ -68,6 +68,7 @@
 
     & .pricing__box__blue {
       margin-top: 40px;
+      box-shadow: 5px 10px 27px #07ACE629;
       @include frame(339px, 277px, $blue, 10px, 80px, 45px, 25px);
       @media (min-width: 1024px) {
         //margin: 0 60px;

@@ -759,6 +759,7 @@
 }
 .section__4 .red .pricing__box__blue, .section__4 .blue .pricing__box__blue, .section__4 .green .pricing__box__blue {
   margin-top: 40px;
+  box-shadow: 5px 10px 27px #07ACE629;
   display: flex;
   width: 339px;
   height: 277px;
