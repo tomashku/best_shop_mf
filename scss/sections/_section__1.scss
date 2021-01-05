@@ -43,15 +43,15 @@
 
   & .image__container {
     width: 100%;
-    overflow: hidden;
+    height: auto;
+    //overflow: hidden;
     display: flex;
     justify-content: center;
   }
 
   & img {
-    //max-width: 1124px;
-    //width: 200%;
-    //height: 200%;
+    width: 200%;
+    height: 200%;
   }
 
 }

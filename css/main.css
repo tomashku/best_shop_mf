@@ -187,10 +187,15 @@
 }
 .section__1 .image__container {
   width: 100%;
-  overflow: hidden;
+  height: auto;
   display: flex;
   justify-content: center;
 }
+.section__1 img {
+  width: 200%;
+  height: 200%;
+}
+
 .section__2 {
   display: flex;
   flex-direction: column;
