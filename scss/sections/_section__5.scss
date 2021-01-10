@@ -4,14 +4,15 @@
   align-items: center;
   padding: 0 30px;
   @media (min-width: 1024px) {
+    width: 896px;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   & .any__questions {
     width: 375px;
     margin-top: 55px;
-    padding: 0 30px;
+    //padding: 0 30px;
     @media (min-width: 1024px) {
       align-self: flex-start;
       margin-right: 114px;
@@ -26,6 +27,10 @@
       font-size: 4rem;
       line-height: 47px;
       color: $black;
+      @media (min-width: 1024px) {
+        font-size: 4.9rem;
+        width: 343px;
+      }
     }
 
     & p:nth-child(2) {
@@ -35,6 +40,7 @@
       line-height: 22px;
       color: $black;
       //LAYOUT
+      margin-top: 22px;
       margin-bottom: 15px;
       height: 45px;
     }
@@ -91,7 +97,7 @@
     width: 312px;
     position: relative;
     @media (min-width: 1024px) {
-
+      width: 440px;
     }
 
     & label {
@@ -131,6 +137,9 @@
       font-size: 1.2rem;
       line-height: 17px;
       color: $light-gray;
+      @media (min-width: 1024px) {
+        width: 440px;
+      }
     }
 
     & .checkbox span {

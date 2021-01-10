@@ -50,6 +50,16 @@
     line-height: 22px;
     font-weight: 400;
     text-transform: uppercase;
+
+  }
+  @media (min-width: 1024px) {
+    & .list li {
+      padding: 25px 5px;
+    }
+    & .list li:hover {
+      border-top: 3px solid transparent;
+      border-bottom: 3px solid $blue;
+    }
   }
 
   & .horizontal__list {

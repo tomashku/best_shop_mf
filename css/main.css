@@ -56,6 +56,15 @@
   font-weight: 400;
   text-transform: uppercase;
 }
+@media (min-width: 1024px) {
+  .header .list li {
+    padding: 25px 5px;
+  }
+  .header .list li:hover {
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid #08A6E4;
+  }
+}
 .header .horizontal__list {
   align-self: center;
 }
@@ -1100,14 +1109,14 @@
 }
 @media (min-width: 1024px) {
   .section__5 {
+    width: 896px;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 .section__5 .any__questions {
   width: 375px;
   margin-top: 55px;
-  padding: 0 30px;
 }
 @media (min-width: 1024px) {
   .section__5 .any__questions {
@@ -1123,11 +1132,18 @@
   line-height: 47px;
   color: #000000;
 }
+@media (min-width: 1024px) {
+  .section__5 .any__questions p:nth-child(1) {
+    font-size: 4.9rem;
+    width: 343px;
+  }
+}
 .section__5 .any__questions p:nth-child(2) {
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   line-height: 22px;
   color: #000000;
+  margin-top: 22px;
   margin-bottom: 15px;
   height: 45px;
 }
@@ -1183,6 +1199,11 @@
   width: 312px;
   position: relative;
 }
+@media (min-width: 1024px) {
+  .section__5 .registration {
+    width: 440px;
+  }
+}
 .section__5 .registration label {
   font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
@@ -1214,6 +1235,11 @@
   font-size: 1.2rem;
   line-height: 17px;
   color: #A5A5A5;
+}
+@media (min-width: 1024px) {
+  .section__5 .registration .checkbox {
+    width: 440px;
+  }
 }
 .section__5 .registration .checkbox span {
   height: 24px;
