@@ -44,14 +44,14 @@
   & .image__container {
     width: 100%;
     height: auto;
-    //overflow: hidden;
+    overflow: hidden;
     display: flex;
     justify-content: center;
   }
 
   & img {
-    width: 200%;
-    height: 200%;
+    width: 108%;
+    height: 108%;
   }
 
 }
