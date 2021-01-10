@@ -57,10 +57,11 @@
   text-transform: uppercase;
 }
 @media (min-width: 1024px) {
-  .header .list li {
-    padding: 25px 5px;
+  .header .list li a {
+    padding: 28px 5px;
   }
-  .header .list li:hover {
+  .header .list li a:hover {
+    color: black;
     border-top: 3px solid transparent;
     border-bottom: 3px solid #08A6E4;
   }
