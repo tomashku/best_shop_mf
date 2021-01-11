@@ -198,13 +198,13 @@
 .section__1 .image__container {
   width: 100%;
   height: auto;
-  overflow: hidden;
   display: flex;
   justify-content: center;
 }
 .section__1 img {
-  width: 108%;
-  height: 108%;
+  min-width: 800px;
+  width: 100%;
+  height: auto;
 }
 
 .section__2 {
